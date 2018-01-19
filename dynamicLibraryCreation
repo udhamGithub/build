@@ -1,1 +1,21 @@
-1.
+https://www.youtube.com/watch?v=nnP81fMdWcg
+
+1. Compile each file with difiition
+   g++ -fpic -c add.c   //posion independent .o we needed, so use -fpic
+   g++ -fpic -c substract.c 
+2. create library
+
+   // ar rs libbasic.a add.o substract.o
+   g++ -shared -o libbasic.so add.o substarct.o
+
+4.Remove all .o and .c file Only keep header file and libray folder
+
+5.Test file write and compile
+    g++ -c  test.cpp 
+
+6. g++ -o  test test.o  libbasic.so
+
+
+7.sudo mv libbasic.so /usr /lib/
+
+8.sudo ldconfig
