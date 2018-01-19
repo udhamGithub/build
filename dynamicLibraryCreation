@@ -1,4 +1,9 @@
+
+Link 1:
 https://www.youtube.com/watch?v=nnP81fMdWcg
+
+Link 2:
+https://www.youtube.com/watch?v=6f8sAduX26I
 
 1. Compile each file with difiition
    g++ -fpic -c add.c   //posion independent .o we needed, so use -fpic
