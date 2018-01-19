@@ -1,0 +1,28 @@
+
+https://www.youtube.com/watch?v=nnP81fMdWcg
+
+1. Compile each file with difiition
+   g++ -c add.c 
+   g++ -c substract.c 
+2. create library
+
+    ar rs libbasic.a add.o substract.o
+
+3. Put declartion in  header file
+    vi basic.h
+
+4.Remove all .o and .c file Only keep header file and libray folder
+
+5.Test file write and compile
+    g++ -c  test.cpp 
+6.Add function and call them in main and add header file
+    compile:
+             g++ -c -I . test.cpp   //-I . too look header file in 
+
+7.Link:
+    g++ -o test  test.o libbasic.a   //test is generated as excutable  using  test object and library
+    
+      or
+     g++ -o test  test.o -L . lbasic
+ 8.Run excutable
+      
