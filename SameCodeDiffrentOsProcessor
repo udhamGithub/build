@@ -1,0 +1,16 @@
+1.If there is same code How it get handle on Diffrent Os and processor
+         -Exe>
+            myprogram.exe-windows
+            myprogram.out-linux
+          -How Os Load the program in main memory?        
+          -Cross compiler
+          -
+2.Platform Independent Message?
+        -I sent one message from pc(which fallow Bigendiness Notation)-Higher Byte of Varible  First
+        
+        to another PC ,which is follow Little endianess[lower Byte of Varible  First] of memory storage
+        for storing the variable in memory adress.
+
+3.What is the benifit of littele endian or big endian?
+4.What is Opeque Pointer
+5.Wha is structure of Process contol block,Thread control block, what is common b/w both?
