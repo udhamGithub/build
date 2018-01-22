@@ -10,7 +10,39 @@
         
         to another PC ,which is follow Little endianess[lower Byte of Varible  First] of memory storage
         for storing the variable in memory adress.
+        
+        
+         //Transmitter thread    
+         
+         struct Userdata
+         {
+         
+         
+         
+         }        
+         
+         structure FrameFormate
+         {
+             struct
+             {
+                int  Header// 4 byte    [0 1 2 3  4 5 6 7  8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 ;
+             }
+             char *data;         
+         };        
+         
+        Send lenth()
+        ConvertIntoBigEndinessOfMessage()
+        SendMessage()
+
+
+        //Transmitter thread
+        
 
 3.What is the benifit of littele endian or big endian?
 4.What is Opeque Pointer
 5.Wha is structure of Process contol block,Thread control block, what is common b/w both?
+
+6.
+
+
+
