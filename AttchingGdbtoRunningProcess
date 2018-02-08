@@ -1,0 +1,14 @@
+
+
+
+The command to use is: gdb attach pid             
+
+where pid is the process id of the process you want to attach to.
+
+Yes you can. Assume a process foo is running...
+
+ps -elf | grep foo
+
+look for the PID number
+
+gdb -a {PID number}
