@@ -12,3 +12,23 @@ ps -elf | grep foo
 look for the PID number
 
 gdb -a {PID number}
+
+Finding processs id
+================================================
+ee205237@pcz-ee205237:~$ ps -elf | grep test
+0 S ee205237 19709 18527  0  80   0 -  5759 futex_ 19:41 pts/1    00:00:00 ./test
+0 S ee205237 19736 19717  0  80   0 -  3988 pipe_w 19:43 pts/3    00:00:00 grep --color=auto test
+
+
+ps -ld | grep  test
+gdb -p PID
+
+(gdb) attach 18527
+(gdb) info thread
+
+(gdb) info thread
+  Id   Target Id         Frame 
+* 1    process 18527 "bash" 0x00007f668882195c in __libc_waitpid (pid=-1, stat_loc=0x7fff82b6fc68, options=10)
+    at ../sysdeps/unix/sysv/linux/waitpid.c:31
+
+
